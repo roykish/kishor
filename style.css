@@ -45,7 +45,7 @@
   html .list-item .item-link, body .list-item .item-link {
 	font-size: 20px;
 	text-decoration: none;
-	color: #7F7F7F;
+	color: #928f8f;
 	transition: 0.3s ease-out all;
   }
   html .list-item .item-link:focus, body .list-item .item-link:focus {
