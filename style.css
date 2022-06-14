@@ -76,7 +76,6 @@
   
   .randomCharacter {
 	display: inline-block;
-	height: 10px;
 	
   }
 
@@ -91,10 +90,8 @@
 	  }
 
 	  html .social, body .social {
-		/* position: absolute; */
 		bottom: 445px;
 		left: 0%;
-		/* transform: translateX(-50%); */
 		width: 600px;
 		text-align: center;
 		transform: translate(-5%,) rotate(90deg);
@@ -193,6 +190,28 @@
 
 
 }
+
+
+.content h1::before {  
+	transform: scaleX(0);
+	transform-origin: bottom right;
+  }
+  
+  .content h1:hover::before {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+  
+  .content h1::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	inset: 0 0 0 0;
+	background: #A2A2A229;
+	transition: transform .3s ease;
+  }
+
 
 
 
